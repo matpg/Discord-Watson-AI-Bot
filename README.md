@@ -1,5 +1,4 @@
 # Crea un Chatbot Inteligente en Discord usando APIs de Watson AI
-## Enlaces
 
 ## Tecnologias
 
