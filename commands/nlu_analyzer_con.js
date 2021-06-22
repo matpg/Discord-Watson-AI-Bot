@@ -31,11 +31,8 @@ module.exports = {
         const response = JSON.stringify(analysisResults, null, 2);
         const answer = JSON.parse(response);
         const result = Array.from(answer.result.concepts);
-        //console.log(answer)
         if (!result.length) { return msg.reply(`No results found for **${args.join(' ')}**.`); }
-        
         for (let topic of result) { msg.channel.send(topic.text) };
-        
       })
       .catch(err => {
         console.log('error:', err);

@@ -25,8 +25,6 @@ module.exports = {
           const response = JSON.stringify(identifiedLanguages, null, 2);
           const answer_id = JSON.parse(response);
           const lang_id = answer_id.result.languages[0].language;
-          console.log(lang_id);
-
           const translateParams = {
             text: text_to_trans,
             modelId: `${lang_id}-en`,
@@ -37,9 +35,7 @@ module.exports = {
               const response = JSON.stringify(translationResult, null, 2);
               const answer_trans = JSON.parse(response);
               const result_trans = Array.from(answer_trans.result.translations);
-
               if (!result_trans.length) { return msg.reply(`No results found for **${args.join(' ')}**.`); }
-
               for (let sentence of result_trans) { msg.channel.send(sentence.translation); }
             })
             .catch(err => {
@@ -49,6 +45,5 @@ module.exports = {
         .catch(err => {
           console.log('error:', err);
       });
-
     }
 }

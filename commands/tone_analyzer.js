@@ -26,20 +26,14 @@ module.exports = {
        toneAnalyzer.tone(toneParams)
         .then( toneAnalysis => {
             const response = JSON.stringify(toneAnalysis, null, 2);
-            //SEPARAR LA RESPUESTA Y ENTREGAR SOLO EL CAMPO DE 'TONES'
+            //SEPARA LA RESPUESTA Y ENTREGA SOLO EL CAMPO DE 'TONES'
             const answer = JSON.parse(response);
             const result = Array.from(answer.result.document_tone.tones);
-            //console.log(result);
             if (!result.length) { return msg.reply(`No results found for **${args.join(' ')}**.`); }
-            
-            for (let mood of result) {
-              console.log(mood.tone_name);
-              msg.channel.send(mood.tone_name); 
-            }
+            for (let mood of result) { msg.channel.send(mood.tone_name); }
         })
         .catch(err => {
             console.log('error:', err);
-        });
-                
+        });        
     }
 }
