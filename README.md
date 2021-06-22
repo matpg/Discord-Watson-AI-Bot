@@ -1,7 +1,7 @@
 # Crea un Chatbot Inteligente en Discord usando APIs de Watson AI
 
 ## Resumen
-En este Code Pattern aprenderás lo sencillo que es integrar diferentes capacidades inteligentes provistas de AI/Machine Learning al construir un chatbot poderoso para usarlo en la plataforma de mensajería y llamadas de Discord colocándolo en un servidor con colegas y clientes, todo esto mediante la programación sencilla en Node.js. Este chatbot es una muestra de como integrar diferentes recursos de Watson para obtener respuesta inteligentes a diferentes incognitas.
+En este Code Pattern aprenderás lo sencillo que es integrar diferentes capacidades inteligentes provistas de AI/Machine Learning al construir un chatbot poderoso para usarlo en la plataforma de mensajería y llamadas de Discord colocándolo en un servidor con colegas y clientes, todo esto mediante la programación sencilla en Node.js. Este chatbot es una muestra de como integrar diferentes recursos de Watson para obtener respuestas inteligentes a diferentes incógnitas.
 
 ## Tecnologias
 
