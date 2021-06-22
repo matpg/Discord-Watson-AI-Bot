@@ -11,7 +11,7 @@ module.exports = {
         authenticator: new IamAuthenticator({
           apikey: process.env.APIKEY_TONE,
         }),
-        serviceUrl: 'https://api.us-south.tone-analyzer.watson.cloud.ibm.com/instances/269736be-6ebb-4100-827f-ef885df1f7b1',
+        serviceUrl: process.env.SERVICE_URL_TONE,
       });
 
       const text = args;

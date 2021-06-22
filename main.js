@@ -41,6 +41,8 @@ client.on('message', async msg => {
 
     // list of commands after prefix
     // Lista de comandos luego del prefijo '!'
+
+    // 1. Comandos base y offtopic
     if (command === 'ping'){
       client.commands.get('ping').execute(msg, args);
 
@@ -70,7 +72,7 @@ client.on('message', async msg => {
         .addField('Rating', `${answer.thumbs_up} thumbs up. ${answer.thumbs_down} thumbs down.`);
         msg.reply(embed);
 
-      //Comandos de Watson AI y llamadas a las APIs
+      // 2. Comandos de Watson AI y llamadas a las APIs
     } else if (command === 'mood'){
       if (!args.length) { return msg.reply('You need to supply a valid mood sentence!'); }
       const mood_comm_text = args.join(' ');

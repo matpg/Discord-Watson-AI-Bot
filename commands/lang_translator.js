@@ -11,7 +11,7 @@ module.exports = {
         authenticator: new IamAuthenticator({
           apikey: process.env.APIKEY_TRANS,
         }),
-        serviceUrl: 'https://api.us-south.language-translator.watson.cloud.ibm.com/instances/492170c6-e3ea-4ef5-b409-5e640abec37b',
+        serviceUrl: process.env.SERVICE_URL_TRANS,
       });
       
       text_to_trans = args;
