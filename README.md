@@ -39,6 +39,6 @@ El usuario de Discord podrá invitar al bot a un servidor y mediante comandos po
 - [Documentación del módulo de Discord.js](https://discord.js.org/#/docs/main/stable/general/welcome)
 - [Desplegar una app en Code Engine](https://developer.ibm.com/patterns/deploy-a-microservices-app-to-ibm-cloud-code-engine/)
 - [Docs de APIs de servicios de Watson](https://cloud.ibm.com/docs?tab=api-docs)
-- [Proyecto en inglés: Chatbot para Whatsapp](https://developer.ibm.com/events/update-your-chatbot-on-whatsapp-with-ibm-watson-assistant/)
+- [Proyecto en inglés: Chatbot para WhatsApp](https://developer.ibm.com/events/update-your-chatbot-on-whatsapp-with-ibm-watson-assistant/)
 - [Servicio de Watson Assistant](https://developer.ibm.com/learningpaths/get-started-watson-assistant/)
 
