@@ -115,7 +115,6 @@ Clona este repositorio con:
 
 ```
 git clone https://github.com/matpg/Discord-Watson-AI-Bot.git
-
 ```
 
 ## Contenido Relacionado
