@@ -112,10 +112,12 @@ Si hiciste todo lo anterior, felicidades, ¡ya tienes tu bot (vacío aún) dentr
 Finalmente, vamos a programar los comandos necesarios para que nuestro bot funcione como un chatbot inteligente, para esto debes hacer lo siguiente:
 
 Clona este repositorio con:
+
 ´´´
 git clone https://github.com/matpg/Discord-Watson-AI-Bot.git
 
 ´´´
+
 ## Contenido Relacionado
 
 - [Documentación de Desarrolladores de Discord](https://discord.com/developers/docs/intro)
