@@ -33,7 +33,7 @@ El usuario de Discord podrá invitar al bot a un servidor y mediante comandos po
 
 ## Instrucciones y Pasos
 
-1. Registrar un nuevo Bot en Discord Developers.
+###1. Registra un nuevo Bot en Discord Developers.
 
 Para crear nuestro bot primero debemos registrar un nuevo bot en el sitio de Discord developers, esto permitirá generar un bot con nombre, descripción e imagen que represente lo que queremos crear, además de darle una entidad dentro de los servidores de Discord, para esto:
 
@@ -68,17 +68,17 @@ Ahora ya cuentas con un bot registrado, dale el nombre que quieras (puede ser el
 </p>
 
 
-2. Añadir Bot a un servidor
+###2. Añade el Bot a un servidor
 
-Aún nuestro bot no hace nada, pero pronto lo hará, por ahora ya que tenemos registrado el bot podemos añadirlo a un servidor para comenzar a darle caracteristicas, puedes agregarlo al servidor que tu quieras, pero recomiendo que al inicio lo agregues a un servidor de pruebas para que puedas ir probando sus comandos de forma más comoda, para esto, debemos hacer lo siguiente:
+Aún nuestro bot no hace nada, pero pronto lo hará, por ahora ya que tenemos registrado el bot podemos añadirlo a un servidor para comenzar a darle características, puedes agregarlo al servidor que tú quieras, pero recomiendo que al inicio lo agregues a un servidor de pruebas para que puedas ir probando sus comandos de forma más cómoda, para esto, debemos hacer lo siguiente:
 
-Visita la [Calculadora de Permisos de Discord](https://discordapi.com/permissions.html), dentro de ellas seleccionaremos todos los permisos, no te preocupes por temas de seguridad y privacidad, nuestro bot solo realizará respuestas a consultas, no tendra facultades para realizar más acciones que solo responder a textos (aunque él lo quiera).
+Visita la [Calculadora de Permisos de Discord](https://discordapi.com/permissions.html), dentro de ellas seleccionaremos todos los permisos, no te preocupes por temas de seguridad y privacidad, nuestro bot solo realizará respuestas a consultas, no tendrá facultades para realizar más acciones que solo responder a textos (aunque él lo quiera).
 
 <p align="center">
   <img src="images/permisos.jpg" width="70%"></img>
 </p>
 
-Luego, vuelve al sitio de los settings de tu aplicacion en el Discord Developer Portal, dirigite a "General Information" y copia tu "APPLICATION ID"
+Luego, vuelve al sitio de los settings de tu aplicación en el Discord Developer Portal, dirígete a "General Information" y copia tu "APPLICATION ID"
 
 <p align="center">
   <img src="images/cliente-id.jpg" width="70%"></img>
@@ -90,9 +90,26 @@ Ahora pega este ID dentro de la Calculadora de Permisos de Discord.
   <img src="images/cliente.jpg" width="70%"></img>
 </p>
 
-Hecho esto, ya tienes listo tu link propio (y link para compartir) para permitir que tu bot entre a tu servidor, como
+Hecho esto, ya tienes listo tu enlace propio (y enlace para compartir) para permitir que tu bot entre a tu servidor y al que tú quieras, ingresa al enlace, selecciona el servidor que quieras, y dale a "Continuar"
 
-2. Clonar el repositorio
+<p align="center">
+  <img src="images/ingresa-server.jpg" width="70%"></img>
+</p>
+
+A continuación, acepta los permisos otorgados al bot haciendo clic en "Autorizar" (Recuerda que el bot solo puede responder comandos que ya están programados, y esto solo contempla llamadas a APIs, por lo tanto, no puede comprometer la privacidad ni seguridad de ningún servidor)
+
+<p align="center">
+  <img src="images/autoriza-bot.jpg" width="70%"></img>
+</p>
+
+Si hiciste todo lo anterior, felicidades, ¡ya tienes tu bot (vacío aún) dentro de tu servidor!
+
+<p align="center">
+  <img src="images/autorizado.jpg" width="70%"></img>
+</p>
+
+###3. Demosle vida al bot con Node.js
+
 
 ## Contenido Relacionado
 
