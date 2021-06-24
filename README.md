@@ -5,6 +5,7 @@ En este Code Pattern aprenderás lo sencillo que es integrar diferentes capacida
 
 ## Tecnologias
 
+- [Discord.js](https://discord.js.org/#/docs/main/stable/general/welcome)
 - [Discord Developer Portal](https://discord.com/developers/applications)
 - [Node.js](https://nodejs.org/en/docs/guides/getting-started-guide/)
 - Servicios de IBM Cloud Watson:
@@ -27,16 +28,65 @@ El usuario de Discord podrá invitar al bot a un servidor y mediante comandos po
 ## Flow
 
 <p align="center">
-  <img src="images/flow-diagram.jpg" width="80%"></img>
+  <img src="images/flow-diagram.jpg" width="70%"></img>
 </p>
 
 ## Instrucciones y Pasos
+
+1. Registrar un nuevo Bot en Discord Developers.
+
+Para crear nuestro bot primero debemos registrar un nuevo bot en el sitio de Discord developers, esto permitirá generar un bot con nombre, descripción e imagen que represente lo que queremos crear, además de darle una entidad dentro de los servidores de Discord, para esto:
+
+Primero, debes dirigirte a [Discord Developer Portal](https://discord.com/developers/applications) e iniciar sesión en el sitio, dentro de este deberías ver una opción para "New Application", haz clic en él como se aprecia en la imagen de abajo recalcado en el círculo rojo.
+
+<p align="center">
+  <img src="images/crear-nueva-app.jpg" width="70%"></img>
+</p>
+
+Dale el nombre que quieras y haz clic en "Create".
+
+<p align="center">
+  <img src="images/dale-nombre-ycrea.jpg" width="70%"></img>
+</p>
+
+Ahora deberías estar dentro de los settings de tu aplicación, en nuestro caso, el uso de esta aplicación será el "capullo" de nuestro bot, por lo tanto, podemos dar una descripción de lo que hará nuestro bot dentro de la descripción de la aplicación, luego para continuar, haz clic dentro de la opción "Bot".
+
+<p align="center">
+  <img src="images/opcion-bot.jpg" width="70%"></img>
+</p>
+
+Haz click en "Add Bot".
+
+<p align="center">
+  <img src="images/anadir-bot.jpg" width="70%"></img>
+</p>
+
+Ahora ya cuentas con un bot registrado, dale el nombre que quieras (puede ser el mismo nombre que el de la aplicación, la verdad no hay mucha diferencia), coloca el icono que quieras y guarda los cambios. Para pasos posteriores, es importante que guardes tu token personal del bot, este token es el que va a permitir controlar y manejar tu bot, es confidencial solo para ti.
+
+<p align="center">
+  <img src="images/token-bot.jpg" width="70%"></img>
+</p>
+
+
+2. Añadir Bot a un servidor
+
+Aún nuestro bot no hace nada, pero pronto lo hará, por ahora ya que tenemos registrado el bot podemos añadirlo a un servidor para comenzar a darle caracteristicas, puedes agregarlo al servidor que tu quieras, pero recomiendo que al inicio lo agregues a un servidor de pruebas para que puedas ir probando sus comandos de forma más comoda, para esto, debemos hacer lo siguiente:
+
+Visita la [Calculadora de Permisos de Discord](https://discordapi.com/permissions.html)
+
+
+
+
+
+
+
+2. Clonar el repositorio
 
 ## Contenido Relacionado
 
 - [Documentación de Desarrolladores de Discord](https://discord.com/developers/docs/intro)
 - [Como usar una REST API](https://discordjs.guide/additional-info/rest-api.html#making-http-requests-with-node)
-- [Documentación del módulo de Discord.js](https://discord.js.org/#/docs/main/stable/general/welcome)
+
 - [Desplegar una app en Code Engine](https://developer.ibm.com/patterns/deploy-a-microservices-app-to-ibm-cloud-code-engine/)
 - [Docs de APIs de servicios de Watson](https://cloud.ibm.com/docs?tab=api-docs)
 - [Proyecto en inglés: Chatbot para WhatsApp](https://developer.ibm.com/events/update-your-chatbot-on-whatsapp-with-ibm-watson-assistant/)
