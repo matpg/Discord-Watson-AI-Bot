@@ -93,13 +93,13 @@ Ahora pega este ID dentro de la Calculadora de Permisos de Discord.
 Hecho esto, ya tienes listo tu enlace propio (y enlace para compartir) para permitir que tu bot entre a tu servidor y al que tú quieras, ingresa al enlace, selecciona el servidor que quieras, y dale a "Continuar"
 
 <p align="center">
-  <img src="images/ingresa-server.jpg" width="70%"></img>
+  <img src="images/ingresa-servidor.jpg" width="70%"></img>
 </p>
 
 A continuación, acepta los permisos otorgados al bot haciendo clic en "Autorizar" (Recuerda que el bot solo puede responder comandos que ya están programados, y esto solo contempla llamadas a APIs, por lo tanto, no puede comprometer la privacidad ni seguridad de ningún servidor)
 
 <p align="center">
-  <img src="images/autoriza-bot.jpg" width="70%"></img>
+  <img src="images/autorizar-bot.jpg" width="70%"></img>
 </p>
 
 Si hiciste todo lo anterior, felicidades, ¡ya tienes tu bot (vacío aún) dentro de tu servidor!
