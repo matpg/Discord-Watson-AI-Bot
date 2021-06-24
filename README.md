@@ -105,7 +105,7 @@ A continuación, acepta los permisos otorgados al bot haciendo clic en "Autoriza
 Si hiciste todo lo anterior, felicidades, ¡ya tienes tu bot (vacío aún) dentro de tu servidor!
 
 <p align="center">
-  <img src="images/autorizado.jpg" width="70%"></img>
+  <img src="images/autorizado.jpg" width="75%"></img>
 </p>
 
 ### 3. Demosle vida al bot con Node.js
