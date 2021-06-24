@@ -113,10 +113,10 @@ Finalmente, vamos a programar los comandos necesarios para que nuestro bot funci
 
 Clona este repositorio con:
 
-´´´
+```
 git clone https://github.com/matpg/Discord-Watson-AI-Bot.git
 
-´´´
+```
 
 ## Contenido Relacionado
 
