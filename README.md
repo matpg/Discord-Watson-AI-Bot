@@ -23,7 +23,7 @@ Tiempo estimado: 60 a 90 minutos.
 
 ## Descripción
 
-El usuario de Discord podrá invitar al bot a un servidor y mediante comandos podrá usar los diferentes recursos inteligentes, como se acostumbra a tratar con los bots de la plataforma. El bot es programado mediante un programa sencillo en Node.js el cual permite ingresar usando permisos mediante el token de usuario de Discord, además, el programa realizará llamadas a las APIs de los servicios Watson que nosotros queramos, en este caso, este Code Pattern utilizará varias llamadas a los 3 servicios mencionados previamente: Language Translator, NLU y Tone Analyzer.
+El usuario de Discord podrá invitar al bot a un servidor y mediante comandos podrá usar los diferentes recursos inteligentes, como se acostumbra a tratar con los bots de la plataforma. El bot es programado mediante un programa sencillo en Node.js el cual permite ingresar usando permisos mediante el token del bot de Discord, además, el programa realizará llamadas a las APIs de los servicios Watson que nosotros queramos, en este caso, este Code Pattern utilizará varias llamadas a los 3 servicios mencionados previamente: Language Translator, NLU y Tone Analyzer.
 
 ## Flow
 
@@ -33,7 +33,7 @@ El usuario de Discord podrá invitar al bot a un servidor y mediante comandos po
 
 ## Instrucciones y Pasos
 
-###1. Registra un nuevo Bot en Discord Developers.
+### 1. Registra un nuevo Bot en Discord Developers.
 
 Para crear nuestro bot primero debemos registrar un nuevo bot en el sitio de Discord developers, esto permitirá generar un bot con nombre, descripción e imagen que represente lo que queremos crear, además de darle una entidad dentro de los servidores de Discord, para esto:
 
@@ -68,7 +68,7 @@ Ahora ya cuentas con un bot registrado, dale el nombre que quieras (puede ser el
 </p>
 
 
-###2. Añade el Bot a un servidor
+### 2. Añade el Bot a un servidor
 
 Aún nuestro bot no hace nada, pero pronto lo hará, por ahora ya que tenemos registrado el bot podemos añadirlo a un servidor para comenzar a darle características, puedes agregarlo al servidor que tú quieras, pero recomiendo que al inicio lo agregues a un servidor de pruebas para que puedas ir probando sus comandos de forma más cómoda, para esto, debemos hacer lo siguiente:
 
@@ -108,7 +108,7 @@ Si hiciste todo lo anterior, felicidades, ¡ya tienes tu bot (vacío aún) dentr
   <img src="images/autorizado.jpg" width="70%"></img>
 </p>
 
-###3. Demosle vida al bot con Node.js
+### 3. Demosle vida al bot con Node.js
 
 
 ## Contenido Relacionado
