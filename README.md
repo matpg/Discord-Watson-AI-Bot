@@ -108,7 +108,7 @@ Si hiciste todo lo anterior, felicidades, ¡ya tienes tu bot (vacío aún) dentr
   <img src="images/autorizado.jpg" width="75%"></img>
 </p>
 
-Puedes revisar este video en inglés que recopila todo este proceso si es que tienes alguna duda del proceso: [Code Your Own Discord Bot](https://www.youtube.com/watch?v=j_sD9udZnCk) creditos al canal de Codelyon en Youtube.
+Puedes revisar este video en inglés que recopila todo este proceso: [Code Your Own Discord Bot](https://www.youtube.com/watch?v=j_sD9udZnCk) creditos al canal de Codelyon en Youtube.
 
 ------------------------------------------------------------------------------------------------------------
 
