@@ -40,31 +40,31 @@ Para crear nuestro bot primero debemos registrar un nuevo bot en el sitio de Dis
 Primero, debes dirigirte a [Discord Developer Portal](https://discord.com/developers/applications) e iniciar sesión en el sitio, dentro de este deberías ver una opción para "New Application", haz clic en él como se aprecia en la imagen de abajo recalcado en el círculo rojo.
 
 <p align="center">
-  <img src="images/crear-nueva-app.jpg" width="70%"></img>
+  <img src="images/crear-nueva-app.jpg" width="75%"></img>
 </p>
 
 Dale el nombre que quieras y haz clic en "Create".
 
 <p align="center">
-  <img src="images/dale-nombre-ycrea.jpg" width="70%"></img>
+  <img src="images/dale-nombre-ycrea.jpg" width="75%"></img>
 </p>
 
 Ahora deberías estar dentro de los settings de tu aplicación, en nuestro caso, el uso de esta aplicación será el "capullo" de nuestro bot, por lo tanto, podemos dar una descripción de lo que hará nuestro bot dentro de la descripción de la aplicación, luego para continuar, haz clic dentro de la opción "Bot".
 
 <p align="center">
-  <img src="images/opcion-bot.jpg" width="70%"></img>
+  <img src="images/opcion-bot.jpg" width="75%"></img>
 </p>
 
 Haz click en "Add Bot".
 
 <p align="center">
-  <img src="images/anadir-bot.jpg" width="70%"></img>
+  <img src="images/anadir-bot.jpg" width="75%"></img>
 </p>
 
 Ahora ya cuentas con un bot registrado, dale el nombre que quieras (puede ser el mismo nombre que el de la aplicación, la verdad no hay mucha diferencia), coloca el icono que quieras y guarda los cambios. Para pasos posteriores, es importante que guardes tu token personal del bot, este token es el que va a permitir controlar y manejar tu bot, es confidencial solo para ti.
 
 <p align="center">
-  <img src="images/token-bot.jpg" width="70%"></img>
+  <img src="images/token-bot.jpg" width="75%"></img>
 </p>
 
 
@@ -75,31 +75,31 @@ Aún nuestro bot no hace nada, pero pronto lo hará, por ahora ya que tenemos re
 Visita la [Calculadora de Permisos de Discord](https://discordapi.com/permissions.html), dentro de ellas seleccionaremos todos los permisos, no te preocupes por temas de seguridad y privacidad, nuestro bot solo realizará respuestas a consultas, no tendrá facultades para realizar más acciones que solo responder a textos (aunque él lo quiera).
 
 <p align="center">
-  <img src="images/permisos.jpg" width="70%"></img>
+  <img src="images/permisos.jpg" width="75%"></img>
 </p>
 
 Luego, vuelve al sitio de los settings de tu aplicación en el Discord Developer Portal, dirígete a "General Information" y copia tu "APPLICATION ID"
 
 <p align="center">
-  <img src="images/cliente-id.jpg" width="70%"></img>
+  <img src="images/cliente-id.jpg" width="75%"></img>
 </p>
 
 Ahora pega este ID dentro de la Calculadora de Permisos de Discord.
 
 <p align="center">
-  <img src="images/cliente.jpg" width="70%"></img>
+  <img src="images/cliente.jpg" width="75%"></img>
 </p>
 
 Hecho esto, ya tienes listo tu enlace propio (y enlace para compartir) para permitir que tu bot entre a tu servidor y al que tú quieras, ingresa al enlace, selecciona el servidor que quieras, y dale a "Continuar"
 
 <p align="center">
-  <img src="images/ingresa-servidor.jpg" width="70%"></img>
+  <img src="images/ingresa-servidor.jpg" width="75%"></img>
 </p>
 
 A continuación, acepta los permisos otorgados al bot haciendo clic en "Autorizar" (Recuerda que el bot solo puede responder comandos que ya están programados, y esto solo contempla llamadas a APIs, por lo tanto, no puede comprometer la privacidad ni seguridad de ningún servidor)
 
 <p align="center">
-  <img src="images/autorizar-bot.jpg" width="70%"></img>
+  <img src="images/autorizar-bot.jpg" width="75%"></img>
 </p>
 
 Si hiciste todo lo anterior, felicidades, ¡ya tienes tu bot (vacío aún) dentro de tu servidor!
