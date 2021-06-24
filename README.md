@@ -72,13 +72,25 @@ Ahora ya cuentas con un bot registrado, dale el nombre que quieras (puede ser el
 
 Aún nuestro bot no hace nada, pero pronto lo hará, por ahora ya que tenemos registrado el bot podemos añadirlo a un servidor para comenzar a darle caracteristicas, puedes agregarlo al servidor que tu quieras, pero recomiendo que al inicio lo agregues a un servidor de pruebas para que puedas ir probando sus comandos de forma más comoda, para esto, debemos hacer lo siguiente:
 
-Visita la [Calculadora de Permisos de Discord](https://discordapi.com/permissions.html)
+Visita la [Calculadora de Permisos de Discord](https://discordapi.com/permissions.html), dentro de ellas seleccionaremos todos los permisos, no te preocupes por temas de seguridad y privacidad, nuestro bot solo realizará respuestas a consultas, no tendra facultades para realizar más acciones que solo responder a textos (aunque él lo quiera).
 
+<p align="center">
+  <img src="images/permisos.jpg" width="70%"></img>
+</p>
 
+Luego, vuelve al sitio de los settings de tu aplicacion en el Discord Developer Portal, dirigite a "General Information" y copia tu "APPLICATION ID"
 
+<p align="center">
+  <img src="images/cliente-id.jpg" width="70%"></img>
+</p>
 
+Ahora pega este ID dentro de la Calculadora de Permisos de Discord.
 
+<p align="center">
+  <img src="images/cliente.jpg" width="70%"></img>
+</p>
 
+Hecho esto, ya tienes listo tu link propio (y link para compartir) para permitir que tu bot entre a tu servidor, como
 
 2. Clonar el repositorio
 
