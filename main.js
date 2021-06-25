@@ -51,12 +51,15 @@ client.on('message', async msg => {
       msg.reply('👁‍🗨🐝Ⓜ Hello friend!');
 
     } else if (command === 'help') {
-      msg.reply('Hello! you can use these commands with me:');
-      msg.reply('-!mood: to know what emotion or feeling is behind your text.');
-      msg.reply('-!related: What is this website / information related to?');
-      msg.reply('-!topic: What topics of interest are behind this website / text?');
-      msg.reply('-!translate: traduce lo que quieras| traduza o que você quiser| 翻译你想要的 -> to the English language');     
-      msg.reply('There are also other fun commands that you can find, just try!');
+      const embed = new MessageEmbed()
+        .setColor('#EFFF00')
+        .setTitle('Hello! you can use these commands with me:')
+        .addField('!mood', 'to know what emotion or feeling is behind your text.')
+        .addField('!related', 'What is this website / information related to?')
+        .addField('!topic', 'What topics of interest are behind this website / text?')
+        .addField('!translate', 'traduce lo que quieras| traduza o que você quiser| 翻译你想要的 -> to the English language')
+        .addField('MORE', 'There are also other fun commands that you can find, just try!');
+        msg.reply(embed);
 
     } else if (command === 'cat') {
       const { file } = await fetch('https://aws.random.cat/meow').then(response => response.json());
