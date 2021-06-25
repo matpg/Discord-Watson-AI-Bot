@@ -43,12 +43,21 @@ client.on('message', async msg => {
     // Lista de comandos luego del prefijo '!'
 
     // 1. Comandos base y offtopic
+
     if (command === 'ping'){
       client.commands.get('ping').execute(msg, args);
 
     } else if (command === 'hi') {
       msg.reply('👁‍🗨🐝Ⓜ Hello friend!');
 
+    } else if (command === 'help') {
+      msg.reply('Hello! you can use these commands with me:');
+      msg.reply('-!mood: to know what emotion or feeling is behind your text.');
+      msg.reply('-!related: What is this website / information related to?');
+      msg.reply('-!topic: What topics of interest are behind this website / text?');
+      msg.reply('-!translate: translate what you want | | -> to the English language');     
+      msg.reply('There are also other fun commands that you can find, just try!');
+      
     } else if (command === 'cat') {
       const { file } = await fetch('https://aws.random.cat/meow').then(response => response.json());
       msg.channel.send(file);
