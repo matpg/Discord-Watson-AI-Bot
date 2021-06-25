@@ -7,10 +7,9 @@ En este Code Pattern aprenderás lo sencillo que es integrar diferentes capacida
 
 - [Discord.js](https://discord.js.org/#/docs/main/stable/general/welcome)
 - [Node.js](https://nodejs.org/en/docs/guides/getting-started-guide/)
-- Servicios de IBM Cloud Watson:
-- [Natural Language Understanding](https://cloud.ibm.com/docs/natural-language-understanding) y [API](https://cloud.ibm.com/apidocs/natural-language-understanding)
-- [Language Translator](https://cloud.ibm.com/docs/language-translator) y [API](https://cloud.ibm.com/apidocs/language-translator)
-- [Tone Analyzer](https://cloud.ibm.com/docs/tone-analyzer) y [API](https://cloud.ibm.com/apidocs/tone-analyzer)
+- [Natural Language Understanding](https://cloud.ibm.com/docs/natural-language-understanding)
+- [Language Translator](https://cloud.ibm.com/docs/language-translator)
+- [Tone Analyzer](https://cloud.ibm.com/docs/tone-analyzer)
 
 Tiempo estimado: 60 a 90 minutos.
 
@@ -18,6 +17,7 @@ Tiempo estimado: 60 a 90 minutos.
 - Contar con una cuenta de [IBM Cloud](https://cloud.ibm.com/), el plan Lite sirve para este Code Pattern.
 - Contar con una cuenta registrada en la plataforma de [Discord](https://discord.com/), se recomienda tener el programa o la aplicación instalada para más rapida ejecución y debug.
 - Contar con [Node.js](https://nodejs.org/en/download/) instalado en tu máquina, ya sea Linux, Windows o Mac.
+- Contar con [Docker](https://www.docker.com/get-started) instalado en tu maquina, puedes usar también el software de Docker Desktop si es que no tienes muchas experiencia con Docker, aunque para este tutorial no será necesario saber mucho sobre esta tecnología.
 - Contar con recursos creados de Natural Language Understanding, Language Translator y Tone Analyzer (técnicamente puedes usar el servicio de Watson que quieras mientras puedas acceder a su API, aunque deberas cambiar el codigo fuente original si es que pruebas otra, los servicios elegidos son a forma de muestra) Si tienes alguna duda de como crear estos servicios visita los enlaces de las tecnologias que están arriba.
 
 ## Descripción
@@ -60,7 +60,7 @@ Haz click en "Add Bot".
   <img src="images/anadir-bot.jpg" width="75%"></img>
 </p>
 
-Ahora ya cuentas con un bot registrado, dale el nombre que quieras (puede ser el mismo nombre que el de la aplicación, la verdad no hay mucha diferencia), coloca el icono que quieras y guarda los cambios. Para pasos posteriores, es importante que guardes tu token personal del bot, este token es el que va a permitir controlar y manejar tu bot, es confidencial solo para ti.
+Ahora ya cuentas con un bot registrado, dale el nombre que quieras (puede ser el mismo nombre que el de la aplicación, la verdad no hay mucha diferencia), coloca el icono que quieras y guarda los cambios. Para pasos posteriores, es **importante que guardes tu token personal del bot**, este token es el que va a permitir controlar y manejar tu bot, es confidencial solo para ti.
 
 <p align="center">
   <img src="images/token-bot.jpg" width="75%"></img>
@@ -108,25 +108,63 @@ Si hiciste todo lo anterior, felicidades, ¡ya tienes tu bot (vacío aún) dentr
   <img src="images/autorizado.jpg" width="75%"></img>
 </p>
 
-Puedes revisar este video en inglés que recopila todo este proceso: [Code Your Own Discord Bot](https://www.youtube.com/watch?v=j_sD9udZnCk) creditos al canal de Codelyon en Youtube.
+Puedes revisar este video en inglés que recopila todo este proceso: [Code Your Own Discord Bot](https://www.youtube.com/watch?v=j_sD9udZnCk) créditos al canal de Codelyon en Youtube.
 
 ------------------------------------------------------------------------------------------------------------
 
-### 3. Demosle vida al bot con Node.js
+### 3. Démosle vida al bot con Node.js
 
-Finalmente, vamos a programar los comandos necesarios para que nuestro bot funcione como un chatbot inteligente, para esto debes hacer lo siguiente:
+Finalmente, vamos a construir nuestro bot para que funcione como un chatbot inteligente, para esto debes hacer lo siguiente:
 
-Clona este repositorio con:
+Clona este repositorio en una consola de comandos o bash:
 
 ```
 git clone https://github.com/matpg/Discord-Watson-AI-Bot.git
 ```
+Entra en la carpeta del proyecto:
+
+```
+cd Discord-Watson-AI-Bot 
+```
+Ya dentro de esta carpeta encontramos todo lo necesario para dar vida al bot, tenemos el archivo "main.js" desde el cual se orquesta las funciones del bot, todo escrito en Node.js, tenemos también la carpeta "commands" en los cuales encontramos los comandos base e iniciales como "ping.js" y los de Watson como "lang_translator.js", "nlu_analyzer_cat.js", "nlu_analyzer_con.js" y "tone_analyzer.js" además de contar con el archivo Dockerfile que permitirá construir una imagen con todo lo necesario para correr nuestro bot, ¡Sin tener que programar nada!
+
+Las funciones inteligentes ya se encuentran programadas, solo debes darle acceso a ellas a traves de los servicios que ya tienes creados como se explican en los "Prerequisitos" de este code pattern, para conectar estos accesos, abre y modifica el archivo ".env_sample" el cual es un template de todos los accesos que necesita el bot, copia todas las API Keys y Service Url de tus recursos de Watson y pegalos, además de copiar y pegar el token de tu bot que se muestra en el paso 1. Registra un nuevo Bot en Discord Developers, si te queda alguna duda de como conseguir estos saccesos, accede a la documentación en "Tecnologías".
+
+<p align="center">
+  <img src="images/foto-env-sample.jpg" width="75%"></img>
+</p>
+
+A continuación, renombra el archivo anterior a solo ".env".
+
+Teniendo todo lo anterior listo, podemos proceder a contruir la imagen completa de los recursos de nuestro bot con Docker, como ves, no hay nada de programación hasta ahora, y tampoco habrá, ya que los comandos ya están programados anteriormente, de los cuales te contaré más después de ejecutar el bot.
+
+Para construir la imagen del bot, en la raiz del proyecto clonado corremos lo siguiente:
+
+```
+docker build -t <NOMBRE QUE ELIJAS PARA EL BOT> .
+```
+
+Esperamos su contrucción, luego corremos lo siguiente:
+
+```
+docker run <NOMBRE QUE ELIJAS PARA EL BOT>
+```
+Si todo salió bien, deberias ver esto en tu consola o bash:
+
+Si ves algo distinto a esto, procura revisar si los accesos copiados al archivo ".env" son los correctos para tus servicios de Watson.
+
+Ahora, con nuestro bot en linea, deberiamos ver al bot en estado de conectado en el servidor de Discord, como se ve en esta imagen.
+
+
+
 
 ## Contenido Relacionado
 
+- [Natural Language Understanding](https://cloud.ibm.com/docs/natural-language-understanding) y [API](https://cloud.ibm.com/apidocs/natural-language-understanding)
+- [Language Translator](https://cloud.ibm.com/docs/language-translator) y [API](https://cloud.ibm.com/apidocs/language-translator)
+- [Tone Analyzer](https://cloud.ibm.com/docs/tone-analyzer) y [API](https://cloud.ibm.com/apidocs/tone-analyzer)
 - [Documentación de Desarrolladores de Discord](https://discord.com/developers/docs/intro)
 - [Como usar una REST API](https://discordjs.guide/additional-info/rest-api.html#making-http-requests-with-node)
-
 - [Desplegar una app en Code Engine](https://developer.ibm.com/patterns/deploy-a-microservices-app-to-ibm-cloud-code-engine/)
 - [Docs de APIs de servicios de Watson](https://cloud.ibm.com/docs?tab=api-docs)
 - [Proyecto en inglés: Chatbot para WhatsApp](https://developer.ibm.com/events/update-your-chatbot-on-whatsapp-with-ibm-watson-assistant/)
