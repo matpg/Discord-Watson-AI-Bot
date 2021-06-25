@@ -11,7 +11,7 @@ module.exports = {
         authenticator: new IamAuthenticator({
           apikey: process.env.APIKEY_NLU,
         }),
-        serviceUrl: 'https://api.us-south.natural-language-understanding.watson.cloud.ibm.com/instances/bdcde66d-27e7-413a-baf4-3a239b9b398c',
+        serviceUrl: process.env.SERVICE_URL_NLU,
       });
 
       //TOPICS -> concepts
