@@ -55,9 +55,9 @@ client.on('message', async msg => {
       msg.reply('-!mood: to know what emotion or feeling is behind your text.');
       msg.reply('-!related: What is this website / information related to?');
       msg.reply('-!topic: What topics of interest are behind this website / text?');
-      msg.reply('-!translate: translate what you want | | -> to the English language');     
+      msg.reply('-!translate: traduce lo que quieras| traduza o que você quiser| 翻译你想要的 -> to the English language');     
       msg.reply('There are also other fun commands that you can find, just try!');
-      
+
     } else if (command === 'cat') {
       const { file } = await fetch('https://aws.random.cat/meow').then(response => response.json());
       msg.channel.send(file);
