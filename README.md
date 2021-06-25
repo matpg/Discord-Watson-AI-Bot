@@ -11,7 +11,7 @@ En este Code Pattern aprenderás lo sencillo que es integrar diferentes capacida
 - [Language Translator](https://cloud.ibm.com/docs/language-translator)
 - [Tone Analyzer](https://cloud.ibm.com/docs/tone-analyzer)
 
-Tiempo estimado: 60 a 90 minutos.
+Tiempo estimado: 30 a 45 minutos.
 
 ### Prerequisitos
 - Contar con una cuenta de [IBM Cloud](https://cloud.ibm.com/), el plan Lite sirve para este Code Pattern.
