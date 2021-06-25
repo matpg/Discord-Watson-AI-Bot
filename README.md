@@ -160,22 +160,22 @@ Si ves algo distinto a esto, procura revisar si los accesos copiados al archivo 
 Ahora, con nuestro bot en línea, deberíamos ver al bot en estado de conectado en el servidor de Discord, como se ve en esta imagen.
 
 <p align="center">
-  <img src="images/bot-conectado.jpg" width="75%"></img>
+  <img src="images/bot-conectado.jpg" width="85%"></img>
 </p>
 
 Llegando a esta parte, el bot se encuentra completamente listo para ser usado, prueba escribiéndole el comando "!help" comenzado con el prejifo "!".
 
 <p align="center">
-  <img src="images/diferentes-comandos.jpg" width="75%"></img>
+  <img src="images/diferentes-comandos.jpg" width="65%"></img>
 </p>
 
 ¡Prueba a utilizar alguno de esos comandos! Puedo explicarte que el comando **!mood** permite conocer alguna emoción o sentimiento encontrado en una oración o párrafo, el comando **!related** te dará una buena idea sobre de que trata un texto de información o sitio web, sin tener que leerlo por completo, y además el comando **!translate** permitirá traducir tu español, portugués o chino al inglés para así no toparse con la barrera del idioma, existen otros comandos divertidos a probar, prueba con revisar la carpeta de "commands" del proyecto y en el programa "main.js" para encontrar los otros comandos... (pista: prueba con "gato" en inglés).
 
 Estas son algunas imagenes capturadas desde Discord, ¡Disfruta tu bot!
 
-<img src="images/comando-uno.jpg" width="33%"></img>
-<img src="images/comando-dos.jpg" width="33%"></img>
-<img src="images/comando-tres.jpg" width="33%"></img>
+<img src="images/comando-uno.jpg" width="50%"></img>
+<img src="images/comando-dos.jpg" width="50%"></img>
+<p align="center"> <img src="images/comando-tres.jpg" width="50%"></img> </p>
 
 Puedes desplegar este proyecto en Code Engine debido a que cuentas con el código fuente y el Dockerfile, actualmente se encuentra desplegado el bot original en la plataforma debido a lo sencillo y rápido que es para estos propósitos, si quieres conocer cómo desplegarlo te invito a ingresar en la documentación de la sección **Contenido Relacionado**.
 
