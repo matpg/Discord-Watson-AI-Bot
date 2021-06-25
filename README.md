@@ -174,10 +174,20 @@ Llegando a esta parte, el bot se encuentra completamente listo para ser usado, p
 <p align="center">
   <img src="images/diferentes-comandos.jpg" width="75%"></img>
 </p>
+
+Estas son algunas imagenes capturadas desde Discord, ¡Disfruta tu bot!
+
+<p align="center">
+  <img src="images/comandos.jpg" width="75%"></img>
+</p>
+
+Puedes desplegar este proyecto en Code Engine debido a que cuentas con el código fuente y el Dockerfile, actualmente se encuentra desplegado el bot original en la plataforma debido a lo sencillo y rápido que es para estos propósitos, si quieres conocer cómo desplegarlo te invito a ingresar en la documentación de la sección **Contenido Relacionado**.
+
 ## Conclusiones
 
+Mediante este proyecto pudiste conocer tecnologías que ofrece Discord para los desarrolladores, Node.js para el back-end de una aplicación, un pequeño puñado de las capacidades inteligentes que se ofrecen en IBM Cloud/Watson y lo sencillo de construir una imagen de una aplicación a través de Docker, todo esto registrando, integrando y desplegando un bot en la plataforma de Discord, el cual, puedes personalizarlo y mejorarlo para mostrar a clientes y colaboradores.
 
-
+------------------------------------------------------------------------------------------------------------
 
 ## Contenido Relacionado
 
