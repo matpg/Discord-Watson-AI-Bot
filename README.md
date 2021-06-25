@@ -128,7 +128,7 @@ cd Discord-Watson-AI-Bot
 ```
 Ya dentro de esta carpeta encontramos todo lo necesario para dar vida al bot, tenemos el archivo "main.js" desde el cual se orquesta las funciones del bot, todo escrito en Node.js, tenemos también la carpeta "commands" en los cuales encontramos los comandos base e iniciales como "ping.js" y los de Watson como "lang_translator.js", "nlu_analyzer_cat.js", "nlu_analyzer_con.js" y "tone_analyzer.js" además de contar con el archivo Dockerfile que permitirá construir una imagen con todo lo necesario para correr nuestro bot, ¡Sin tener que programar nada!
 
-Las funciones inteligentes ya se encuentran programadas, solo debes darle acceso a ellas a traves de los servicios que ya tienes creados como se explican en los "Prerequisitos" de este code pattern, para conectar estos accesos, abre y modifica el archivo ".env_sample" el cual es un template de todos los accesos que necesita el bot, copia todas las API Keys y Service Url de tus recursos de Watson y pegalos, además de copiar y pegar el token de tu bot que se muestra en el paso 1. Registra un nuevo Bot en Discord Developers, si te queda alguna duda de como conseguir estos saccesos, accede a la documentación en "Tecnologías".
+Las funciones inteligentes ya se encuentran programadas, solo debes darle acceso a ellas a través de los servicios que ya tienes creados como se detallan en los **Prerequisitos** de este code pattern, para conectar estos accesos, abre y modifica el archivo ".env_sample" el cual es un template de todos los accesos que necesita el bot, copia todas las API Keys y Service Url de tus recursos de Watson y pegalos, además de copiar y pegar el token de tu bot que se muestra en el paso **1. Registra un nuevo Bot en Discord Developers**, si te queda alguna duda de cómo conseguir estos accesos, ingresa a la documentación en **Tecnologías**.
 
 <p align="center">
   <img src="images/foto-env-sample.jpg" width="75%"></img>
@@ -136,24 +136,45 @@ Las funciones inteligentes ya se encuentran programadas, solo debes darle acceso
 
 A continuación, renombra el archivo anterior a solo ".env".
 
-Teniendo todo lo anterior listo, podemos proceder a contruir la imagen completa de los recursos de nuestro bot con Docker, como ves, no hay nada de programación hasta ahora, y tampoco habrá, ya que los comandos ya están programados anteriormente, de los cuales te contaré más después de ejecutar el bot.
+Teniendo todo lo anterior listo, podemos proceder a construir la imagen completa de los recursos de nuestro bot con Docker, como ves, no hay nada de programación hasta ahora, y tampoco habrá, ya que los comandos ya están programados anteriormente, de los cuales te contaré más después de ejecutar el bot.
 
-Para construir la imagen del bot, en la raiz del proyecto clonado corremos lo siguiente:
+Para construir la imagen del bot, en la raíz del proyecto clonado corremos lo siguiente:
 
 ```
 docker build -t <NOMBRE QUE ELIJAS PARA EL BOT> .
 ```
 
-Esperamos su contrucción, luego corremos lo siguiente:
+Esperamos su construcción, luego corremos lo siguiente:
 
 ```
 docker run <NOMBRE QUE ELIJAS PARA EL BOT>
 ```
-Si todo salió bien, deberias ver esto en tu consola o bash:
+Si todo salió bien, deberías ver que tu bot se encuentra en línea, viendo esto en tu consola o bash:
+
+```
+Watson AI Bot is online!
+```
 
 Si ves algo distinto a esto, procura revisar si los accesos copiados al archivo ".env" son los correctos para tus servicios de Watson.
 
-Ahora, con nuestro bot en linea, deberiamos ver al bot en estado de conectado en el servidor de Discord, como se ve en esta imagen.
+Ahora, con nuestro bot en línea, deberíamos ver al bot en estado de conectado en el servidor de Discord, como se ve en esta imagen.
+
+<p align="center">
+  <img src="images/bot-conectado.jpg" width="75%"></img>
+</p>
+
+Llegando a esta parte, el bot se encuentra completamente listo para ser usado, prueba escribiéndole el comando "!help" comenzado con el prejifo "!".
+
+<p align="center">
+  <img src="images/comando-help.jpg" width="75%"></img>
+</p>
+
+¡Prueba a utilizar alguno de esos comandos! Puedo explicarte que el comando **!mood** permite conocer alguna emoción o sentimiento encontrado en una oración o párrafo, el comando **!related** te dará una buena idea sobre de que trata un texto de información o sitio web, sin tener que leerlo por completo, y además el comando **!translate** permitirá traducir tu español, portugués o chino al inglés para así no toparse con la barrera del idioma, existen otros comandos divertidos a probar, prueba con revisar la carpeta de "commands" del proyecto y en el programa "main.js" para encontrar los otros comandos... (pista: prueba con "gato" en inglés).
+
+<p align="center">
+  <img src="images/diferentes-comandos.jpg" width="75%"></img>
+</p>
+## Conclusiones
 
 
 
