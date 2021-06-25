@@ -177,7 +177,7 @@ Estas son algunas imagenes capturadas desde Discord, ¡Disfruta tu bot!
 <img src="images/comando-dos.jpg" width="43%"></img>
 <p align="center"> <img src="images/comando-tres.jpg" width="50%"></img> </p>
 
-Puedes desplegar este proyecto en Code Engine debido a que cuentas con el código fuente y el Dockerfile, actualmente se encuentra desplegado el bot original en la plataforma debido a lo sencillo y rápido que es para estos propósitos, si quieres conocer cómo desplegarlo te invito a ingresar en la documentación de la sección **Contenido Relacionado**.
+Puedes desplegar este proyecto en Code Engine debido a que cuentas con el código fuente y el Dockerfile, actualmente se encuentra desplegado el bot original en la plataforma debido a lo sencillo y rápido que es para estos propósitos, si quieres conocer cómo desplegarlo te invito a ingresar a [Code Engine: cómo desplegar aplicaciones en 2 simples pasos](https://developer.ibm.com/es/tutorials/code-engine-como-desplegar-aplicaciones-en-2-simples-pasos/) y también conocer más en la sección **Contenido Relacionado**.
 
 ## Conclusiones
 
@@ -192,6 +192,7 @@ Mediante este proyecto pudiste conocer tecnologías que ofrece Discord para los 
 - [Tone Analyzer](https://cloud.ibm.com/docs/tone-analyzer) y [API](https://cloud.ibm.com/apidocs/tone-analyzer)
 - [Documentación de Desarrolladores de Discord](https://discord.com/developers/docs/intro)
 - [Como usar una REST API](https://discordjs.guide/additional-info/rest-api.html#making-http-requests-with-node)
+- [Code Engine: cómo desplegar aplicaciones en 2 simples pasos](https://developer.ibm.com/es/tutorials/code-engine-como-desplegar-aplicaciones-en-2-simples-pasos/)
 - [Desplegar una app en Code Engine](https://developer.ibm.com/patterns/deploy-a-microservices-app-to-ibm-cloud-code-engine/)
 - [Docs de APIs de servicios de Watson](https://cloud.ibm.com/docs?tab=api-docs)
 - [Proyecto en inglés: Chatbot para WhatsApp](https://developer.ibm.com/events/update-your-chatbot-on-whatsapp-with-ibm-watson-assistant/)
