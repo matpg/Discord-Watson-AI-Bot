@@ -173,8 +173,8 @@ Llegando a esta parte, el bot se encuentra completamente listo para ser usado, p
 
 Estas son algunas imagenes capturadas desde Discord, ¡Disfruta tu bot!
 
-<img src="images/comando-uno.jpg" width="48%"></img>
-<img src="images/comando-dos.jpg" width="42%"></img>
+<img src="images/comando-uno.jpg" width="47%"></img>
+<img src="images/comando-dos.jpg" width="43%"></img>
 <p align="center"> <img src="images/comando-tres.jpg" width="50%"></img> </p>
 
 Puedes desplegar este proyecto en Code Engine debido a que cuentas con el código fuente y el Dockerfile, actualmente se encuentra desplegado el bot original en la plataforma debido a lo sencillo y rápido que es para estos propósitos, si quieres conocer cómo desplegarlo te invito a ingresar en la documentación de la sección **Contenido Relacionado**.
