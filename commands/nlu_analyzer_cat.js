@@ -31,7 +31,7 @@ module.exports = {
         const response = JSON.stringify(analysisResults, null, 2);
         const answer = JSON.parse(response);
         const result = Array.from(answer.result.categories);
-        if (!result.length) { return msg.reply(`No results found for **${args.join(' ')}**.`); }
+        if (!result.length) { return msg.reply(`No results found for **${args}**.`); }
         for (let related of result) { msg.channel.send(related.label) };
       })
       .catch(err => {

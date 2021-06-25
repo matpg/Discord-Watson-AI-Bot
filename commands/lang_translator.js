@@ -35,7 +35,7 @@ module.exports = {
               const response = JSON.stringify(translationResult, null, 2);
               const answer_trans = JSON.parse(response);
               const result_trans = Array.from(answer_trans.result.translations);
-              if (!result_trans.length) { return msg.reply(`No results found for **${args.join(' ')}**.`); }
+              if (!result_trans.length) { return msg.reply(`No results found for **${args}**.`); }
               for (let sentence of result_trans) { msg.channel.send(sentence.translation); }
             })
             .catch(err => {

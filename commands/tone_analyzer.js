@@ -29,7 +29,7 @@ module.exports = {
             //SEPARA LA RESPUESTA Y ENTREGA SOLO EL CAMPO DE 'TONES'
             const answer = JSON.parse(response);
             const result = Array.from(answer.result.document_tone.tones);
-            if (!result.length) { return msg.reply(`No results found for **${args.join(' ')}**.`); }
+            if (!result.length) { return msg.reply(`No results found for **${args}**.`); }
             for (let mood of result) { msg.channel.send(mood.tone_name); }
         })
         .catch(err => {
