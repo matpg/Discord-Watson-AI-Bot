@@ -30,11 +30,11 @@ El usuario de Discord podrá invitar al bot a un servidor y mediante comandos po
   <img src="images/flow-diagram.jpg" width="70%"></img>
 </p>
 
-- El usuario interactua con el bot en la plataforma Discord.
-- El bot utiliza la aplicación Node.js para recibir los comandos.
-- Dentro de la app Node.js se realizan las llamadas a la APIs de los servicios.
-- Las respuestas de las APIs son recepcionadas y acomodadas por la app.
-- El bot entrega las respuesta al usuario en Discord.
+-	El usuario interactúa con el bot en la plataforma Discord.
+-	El bot utiliza la aplicación Node.js para recibir los comandos.
+-	Dentro de la app Node.js se realizan las llamadas a la APIs de los servicios.
+-	Las respuestas de las APIs son recibidas y acomodadas por la app.
+-	El bot entrega las respuestas al usuario en Discord.
 
 
 ## Instrucciones y Pasos
