@@ -30,6 +30,13 @@ El usuario de Discord podrá invitar al bot a un servidor y mediante comandos po
   <img src="images/flow-diagram.jpg" width="70%"></img>
 </p>
 
+- El usuario interactua con el bot.
+- El bot utiliza Node.js para responder.
+- Dentro Node.js realiza las llamadas a la APIs.
+- Las respuestas de las APIs son recepcionadas y acomodadas para el bot.
+- El bot muestra las repuestas de cara al usuario.
+
+
 ## Instrucciones y Pasos
 
 ### 1. Registra un nuevo Bot en Discord Developers.
